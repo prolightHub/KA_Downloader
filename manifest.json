@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name":    "KA Project Downloader",
+    "version": "1.0",
+
+    "description": "Embeds a download button below Khan Academy projects so you Khan download them.",
+
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [{
+        "matches": ["https://www.khanacademy.org/*"],
+        "js":      ["libraries/jszip/FileSaver.js", "libraries/jszip/jszip.js", "content.js"]
+    }],
+    "browser_action": {
+        "default_title": "KA_Downloader",
+        "default_icon": "images/icon.png"
+    },
+    "permissions": ["activeTab", "debugger", "storage"]
+}
