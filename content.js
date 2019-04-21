@@ -177,6 +177,6 @@ if (tests.editor.test(window.location.href))
 			{
 				console.log(e);
 			}
-		}, 1000);
+		}, 2000);
 	});
 }
