@@ -68,7 +68,7 @@ var downloader = {
 	{
 		var test = "[\"./javascript/tutorial-scratchpad-package/scratchpad-page-entry.js\"] = ";
 	    var index = str.indexOf(test) + test.length;
-	    return str.substring(index, str.indexOf("</script>", index));
+	    return str.substring(index, str.indexOf("</script>", index) - 2);
 	},
 	onclick: function(event)
 	{
@@ -143,13 +143,13 @@ if (tests.editor.test(window.location.href))
 				/* Create the Download button with all its attributes */
 				var dload = document.createElement("a");
 				dload.innerText = "Download";
-				dload.setAttribute("class", "link_1uvuyao-o_O-computing_77ub1h");
+				dload.setAttribute("class", "_ydn7zo7");
 				dload.setAttribute("role", "button");
 				dload.setAttribute("href", "javascript:void(0)");
 				dload.setAttribute('id', "0-btn-download0v1");
 
 				/* Embed the button! */
-				var place = document.getElementsByClassName("buttons_vponqv")[0];
+				var place = document.getElementsByClassName("_qr5vxk")[0];
 				place.appendChild(document.createElement("span").appendChild(dload));
 
 				/* Link it with our projects*/
